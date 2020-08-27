@@ -17,3 +17,7 @@ class Person:
 me = Person('john', 32)
 print ('My name is ', me.name)
 print ('My age is', me.age, '\n')
+
+me1 = Person('johnson', 132)
+print ('My name is ', me1.name)
+print ('My age is', me1.age')
