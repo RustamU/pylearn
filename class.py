@@ -1,7 +1,6 @@
 import sys
 
 class Person:
-
     name = None
     age = None
     def __init__ (self, name, age):
