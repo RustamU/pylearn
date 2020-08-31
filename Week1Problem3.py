@@ -1,4 +1,4 @@
-s = 'abcdefabcdefghz'
+s = 'azcbobobegghakl'
 longestSubstring = s[0]
 tempSubstring = ''
 for i in range (len(s)-1):
@@ -7,9 +7,8 @@ for i in range (len(s)-1):
         i += 1
         if len(tempSubstring) > len(longestSubstring):
             longestSubstring = tempSubstring
-        print (longestSubstring)
+
     else:
         tempSubstring = s[i+1]
         i += 1
-        print (longestSubstring)
-print (longestSubstring)
+print ('Longest substring in alphabetical order is:', longestSubstring)
