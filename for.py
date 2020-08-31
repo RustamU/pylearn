@@ -1,8 +1,6 @@
-number = int(input('Enter number: '))
-ans = 0
-while ans**3 < number:
-    ans += 1
-if ans ** 3 > number:
-    print ('Not a perfect root')
-elif ans ** 3 == number:
-        print ('3 root =', ans)
+for iteration in range(5):
+    count = 0
+    while True:
+        for letter in "hello, world":
+            count += 1
+        print("Iteration " + str(iteration) + "; count is: " + str(count))
