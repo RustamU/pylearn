@@ -1,4 +1,4 @@
-s = 'azcbobobegghakl'
+s = 'azcbobobegghakls'
 vowels = 0
 for letter in s:
     if letter in ('a', 'e', 'i', 'o', 'u'):
