@@ -9,7 +9,7 @@ while True:
     elif ans == "l":
         low = (low + hi)//2
     elif ans == "c":
-        print ("Game over. Your secret number was:", ans)
+        print ("Game over. Your secret number was:", (low+hi)//2)
         break
     else:
         print ("Sorry, I did not understand your input.")
