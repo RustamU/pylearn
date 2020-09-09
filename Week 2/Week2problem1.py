@@ -13,7 +13,5 @@ def balanceCalc(balance, annualInterestRate, monthlyPaymentRate):
         tBal = ((tBal - tBal*monthlyPaymentRate) + (tBal - tBal*monthlyPaymentRate)*annualInterestRate/12)
         i += 1
     return round (tBal, 2)
-balance = 484
-annualInterestRate = 0.2
-monthlyPaymentRate = 0.04
+
 print ('Remaining balance:', balanceCalc (balance, annualInterestRate, monthlyPaymentRate))
