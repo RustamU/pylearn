@@ -17,4 +17,4 @@ animals['d'] = ['donkey']
 animals['d'].append('dog')
 animals['d'].append('dingo')
 
-print (how_many (animals))
+#print (how_many (animals))
