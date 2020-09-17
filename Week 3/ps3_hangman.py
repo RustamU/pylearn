@@ -126,6 +126,7 @@ def hangman(secretWord):
                     lettersGuessed.append(guess)
                     print ('Oops! That letter is not in my word: ', getGuessedWord(secretWord, lettersGuessed))
                     print ('-------------')
+
 # When you've completed your hangman function, uncomment these two lines
 # and run this file to test! (hint: you might want to pick your own
 # secretWord while you're testing)
