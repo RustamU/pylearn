@@ -155,6 +155,12 @@ def updateHand(hand, word):
     tempHand = {x:y for x,y in tempHand.items() if y!=0}
     return tempHand
 
+def hackGrader(hand, word)
+    tempHand = hand.copy()
+    for letter in word:
+        tempHand [letter] -= 1
+    tempHand = {x:y for x,y in tempHand.items() if y!=0}
+    return tempHand
 
 
 #
