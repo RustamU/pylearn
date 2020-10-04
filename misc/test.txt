@@ -1,6 +1,4 @@
-qwer
-adasfds
-dvgdsf
-ewfefwe
-sdfwef
-fwefewf
+rustam,urusov,5
+timur.urusov,5
+tatiana,gordeeva,5
+rulon,oboev,2
