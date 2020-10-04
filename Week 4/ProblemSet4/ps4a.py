@@ -96,10 +96,11 @@ def displayHand(hand):
 
     hand: dictionary (string -> int)
     """
-    print ('Current Hand: ', end='')
+    print ('Current Hand: ', end = '')
     for letter in hand.keys():
         for j in range(hand[letter]):
-             print(letter,end=" ")       # print all on the same line
+             print(letter, end=" ")
+    print ('\n')       # print all on the same line
                                # print an empty line
 
 #
@@ -155,7 +156,7 @@ def updateHand(hand, word):
     tempHand = {x:y for x,y in tempHand.items() if y!=0}
     return tempHand
 
-def hackGrader(hand, word)
+def hackGrader(hand, word):
     tempHand = hand.copy()
     for letter in word:
         tempHand [letter] -= 1
@@ -285,9 +286,28 @@ def playGame(wordList):
 
     2) When done playing the hand, repeat from step 1
     """
-    # TO DO ... <-- Remove this comment when you code this function
-    print("playGame not yet implemented.") # <-- Remove this line when you code the function
+    lasthand = {}
+    while True:
+        n = HAND_SIZE
+        ask = input ('Enter n to deal a new hand, r to replay the last hand, or e to end game:')
+        if ask == 'n':
+            hand = dealHand (n)
+            lasthand = hand.copy()
+            playHand(hand, wordList, n)
 
+        elif ask == 'r':
+            if len(lasthand) == 0:
+                print ('You have not played a hand yet. Please play a new hand first!')
+                continue
+            else:
+                playHand (lasthand, wordList, n)
+
+        elif ask == 'e':
+            break
+
+        else:
+            print ('Invalid command.')
+            continue
 
 
 
