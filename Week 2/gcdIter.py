@@ -20,4 +20,4 @@ def gcdRecur(a, b):
     else:
         print ('a is %d now, b is %d now' % (a , b))
         return gcdRecur (b, a%b)
-print (gcdRecur (10000,100))
+print (gcdRecur (1024,28))
