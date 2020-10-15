@@ -96,6 +96,8 @@ class Hand(object):
         if a == True:
             for letter in word:
                 self.hand[letter] -= 1
+                if self.hand[letter] == 0:
+                    del hand[letter]
         return a
 
 myHand = Hand(7)
