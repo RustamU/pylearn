@@ -9,4 +9,4 @@ def Towers(n, fr, to, spare):
         Towers(1, fr, to, spare)
         Towers(n-1, spare, to, fr)
 
-Towers(6, 'P1', 'P2', 'P3')
+Towers(3, 'P1', 'P2', 'P3')
